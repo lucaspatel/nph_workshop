@@ -145,3 +145,12 @@ full dataset").
   is not the `miint-tutorial` kernel. Switch via `Kernel -> Change Kernel`.
 - **`conda: command not found`** — restart your terminal after
   installing Miniforge, or `source` the appropriate rc file.
+
+---
+
+## Extra resources:
+
+If you enjoyed this tutorial, especially the use of MIINT, please check out the [duckdb-miint](https://github.com/the-miint/duckdb-miint/tree/main) repo! Note that it is under active development and constantly adding new functionality. Shoutout to the leader of this effort, Daniel McDonald!
+
+If you want to read the paper that this data is generated for, check out [this paper](https://www.nature.com/articles/s41586-019-1237-9)!
+
