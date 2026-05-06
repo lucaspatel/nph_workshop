@@ -55,19 +55,20 @@ conda --version    # should print conda 24.x or similar
 From the directory containing this README:
 
 ```bash
-conda create -n miint-tutorial -c conda-forge -c bioconda -y \
-    python=3.11 \
-    duckdb python-duckdb \
-    biom-format scikit-bio scikit-learn \
-    pandas numpy scipy \
-    matplotlib seaborn \
-    jupyterlab ipykernel
+conda create -n miint-tutorial -c conda-forge python=3.11 duckdb python-duckdb pandas numpy seaborn scikit-bio scikit-learn matplotlib jupyterlab ipykernel -y
 ```
 
 Then activate it:
 
 ```bash
 conda activate miint-tutorial
+```
+
+And install some other dependencies that aren't in conda:
+```bash
+pip install cython
+pip install --no-build-isolation iow
+pip install gemelli
 ```
 
 Register the env as a Jupyter kernel so the notebook can find it:
