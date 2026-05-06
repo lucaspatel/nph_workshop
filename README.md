@@ -144,10 +144,3 @@ full dataset").
   is not the `miint-tutorial` kernel. Switch via `Kernel -> Change Kernel`.
 - **`conda: command not found`** — restart your terminal after
   installing Miniforge, or `source` the appropriate rc file.
-- **Slow UniFrac / PCoA** — the pure-Python implementation in scikit-bio
-  is fine for ~hundreds of samples but slow for thousands. For the full
-  HMP2 dataset, install the optional `unifrac` package
-  (`conda install -c conda-forge -c bioconda unifrac`) and swap in
-  `unifrac.weighted_unifrac(biom_path, tree_path)`.
-- **Apple Silicon (M1/M2/M3)** — all required packages have native
-  `osx-arm64` builds on conda-forge; no extra flags needed.
