@@ -18,14 +18,13 @@ The notebook (`tutorial.ipynb`) covers:
 
 ## 1. Install Miniforge (a minimal conda distribution)
 
-Miniforge ships `conda` pre-configured with `conda-forge` as the default
-channel, which is what we want for scientific Python packages.
+This is just if you don't already have some sort of conda/mamba installed. Miniforge ships `conda` pre-configured with `conda-forge` as the default channel, which is what we want for scientific Python packages. Please go to <https://conda-forge.org/download/> and find the right installer for your OS/architecture, or follow the steps below. 
 
 ### macOS / Linux
 
 ```bash
-# Download the installer for your platform (this auto-detects)
-curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+# Download the installer for your platform (should auto detect)
+curl -L -O "https://conda-forge.org/download/Miniforge3-$(uname)-$(uname -m).sh"
 
 # Run it (accept the license, accept the default install location)
 bash Miniforge3-$(uname)-$(uname -m).sh
@@ -38,9 +37,12 @@ source ~/.zshrc       # zsh users (default on macOS)
 ### Windows
 
 Download and run the installer from
-<https://github.com/conda-forge/miniforge/releases/latest>
-(`Miniforge3-Windows-x86_64.exe`), then open the **Miniforge Prompt** from
+<https://conda-forge.org/download/>
+(`Miniforge3-26.1.1-3-Windows-x86_64.exe`), then open the **Miniforge Prompt** from
 the Start menu.
+
+**Note: This tutorial was not tested on Windows, so there is no guarantee that the packages used will play nicely with it.**
+**We apologize for any inconvenience this might cause.**
 
 ### Verify
 
